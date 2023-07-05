@@ -1,0 +1,384 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+header{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	z-index:99;
+	display:flex;
+	justify-content:space-between;
+	margin:10px 30px;
+}
+.logo,nav{
+	display:flex;
+	align-items:center;
+}
+.logo a{
+	text-decoration:none;
+	color:black;
+	font-weight:900;
+	font-size:20px;
+	font-family: "Poppins", sans-serif;
+	margin-left:5px;
+	text-transform:uppercase
+}
+nav a,nav img{
+	text-decoration:none;
+	color:white;
+	font-size:20px;
+	margin-left:50px;
+}
+/*-----------------------------------------------------------------------*/
+.slider{
+	background-image:url("../img/hero-bg.png");
+	background-attachment:fixed;
+	background-size:100% 100%;
+	height:650px;
+	position:relative;
+}
+.slider > div > img{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:80px;
+	height:150px;
+}
+.slider > div{
+	position:relative;
+	height:600px;
+}
+.carousel-inner{
+	width:950px;
+	height:500px;
+	margin:0 auto;
+	position:relative;
+	padding-top:60px;
+	overflow:hidden;
+}
+.carousel-item{
+	float:left;
+	display:flex;
+	justify-content:center;
+	transition:margin-left 0.5s;
+}
+.carousel-item .details-box{
+	padding-top:100px;
+	width:450px;
+}
+.carousel-item .details-box h1 span{
+	font-size:60px;
+	font-weight:900;
+	font-family:sans-serif;
+	line-height:150px;
+	text-transform:uppercase;
+}
+.carousel-item .details-box button,.about .details-box button,.OurJewelleryPrice > button,.OurJewelleryPrice .product .item button{
+	background-color:black;
+	color:white;
+	padding:20px;
+	outline:none;
+	border:none;
+	width:150px;
+	margin-top:50px;
+	cursor:pointer;
+}
+.carousel-item .details-box button:hover,.about .details-box button:hover,.OurJewelleryPrice > button:hover{
+	background-color:white;
+	color:black;
+	border:2px solid black;
+}
+.carousel-item .details-box div span{
+	color:gray;
+	margin-left:30px;
+	font-size:40px;
+}
+/*--------------------------------------------*/
+.products{
+	display:flex;
+	padding:50px;
+	margin:0 100px;
+}
+.products .item{
+	background-color:white;
+	box-shadow:0 0 10px gray;
+	position:relative;
+	margin-right:50px;
+	padding:50px 80px;
+	font-size:20px;
+	font-weight:800;
+	width:600px;
+	height:300px;
+}
+.products .item .price{
+	position:absolute;
+	left:20px;
+	top:20px;
+	color:rgb(239,182,0)
+}
+.products .item .name{
+	position:absolute;
+	left:20px;
+	bottom:20px;
+	color:black;
+}
+/*---------------------------------------*/
+.about{
+	position:relative;
+	padding-top:50px;
+}
+.about >div{
+	display:flex;
+	margin:100px 200px;
+}
+.about .details-box h1,.OurJewelleryPrice h1{
+	border-right:10px solid rgb(239,182,0);
+	line-height:50px;
+	width:max-content;
+	font-size:40px;
+	font-weight:100;
+	margin-bottom:50px;
+	padding-right:10px;
+}
+.about .details-box p{
+	font-size:20px
+}
+.about > img{
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+/*------------------------------------*/
+.OurJewelleryPrice{
+	margin:100px 0;
+	padding:30px 200px;
+	background-color: rgb(240,240,240);
+}
+.OurJewelleryPrice > button{
+	margin:50px 400px;
+}
+.OurJewelleryPrice .product{
+	margin:0 -30px;
+	display:flex;
+}
+.OurJewelleryPrice .product .item{
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	background-color:white;
+	box-shadow:0 0 10px gray;
+	width:600px;
+	height:550px;
+	margin-right:40px;
+	padding:20px 80px;
+}
+.OurJewelleryPrice .product .item .name{
+	font-size:25px;
+	margin-bottom:50px;
+}
+.OurJewelleryPrice .product .item .price{
+	font-size:30px;
+	color:rgb(239,182,0);
+	margin-top:100px;
+}
+.OurJewelleryPrice .product .item button{
+	border:2px solid black;
+	color:black;
+	background-color:white;
+	padding:10px
+}
+.OurJewelleryPrice .product .item button:hover{
+	border:2px solid rgb(239,182,0);
+	color:rgb(239,182,0);
+	background-color:white;
+}
+/*------------------------------------------------*/
+.wedding-ring > div{
+	display:flex;
+	background-color:white;
+	box-shadow:0 0 10px gray;
+	margin:0 100px;
+	padding:20px;
+}
+.wedding-ring >div .img-box img{
+	width:750px;
+	height:100%;
+}
+.wedding-ring > div h1{
+	text-align:center;
+	color:rgb(239,182,0);
+	text-transform:uppercase;
+	font-weight:100;
+	font-size:30px;
+	margin-top:70px;
+}
+.wedding-ring > div button{
+	margin:40px 100px;
+	background-color:white;
+	color:black;
+	border:2px solid black;
+	padding:10px;
+	width:150px;
+}
+/*---------------------------------------------------------*/
+.Testimonial{
+	margin-top:100px;
+	position:relative;
+}
+ .Testimonial > span{
+	font-size:40px;
+	font-weight:400;
+	border-right:5px solid rgb(239,182,0);
+	padding-right:10px;
+	margin:0 550px
+}
+.Testimonial > h1{
+	margin:10px 530px;
+}
+.Testimonial .opinions-warp{
+	overflow:hidden;
+	height:180px;
+	margin:50px 250px;
+}
+.Testimonial .opinions-warp .opinions{
+	border:2px solid rgb(239,182,0);
+	display:flex;
+	align-items:center;
+	width:850px;
+	margin-bottom:20px;
+	padding:20px;
+	float:left;
+	transition:margin-left 0.5s;
+}
+.Testimonial .opinions >div{
+	width:500px;
+	margin-right:30px;
+	margin-left:30px;
+}
+.Testimonial #prev-btn,.Testimonial #next-btn{
+	background:none;
+	outline:none;
+	border:none;
+	cursor:pointer;
+	position:absolute;
+	top:200px;
+}
+.Testimonial #prev-btn{
+	left:100px;
+}
+.Testimonial #next-btn{
+	right:100px;
+}
+/*-----------------------------*/
+.contact{
+	margin:150px 100px
+}
+.contact h1{
+	font-size:40px;
+	font-weight:100;
+	font-family:arial
+}
+.contact >div{
+	display:flex;
+}
+.contact >div form{
+	margin-right:40px;
+}
+.contact >div form input{
+	display:block;
+	margin-top:50px;
+	width:500px;
+	height:50px;
+	padding-left:20px;
+	border:none;
+	outline:none;
+	box-shadow:0 0 5px gray
+}
+.contact >div form input::placeholder{
+	font-size:20px;
+}
+.contact >div form .message{
+	height:200px;
+}
+.contact >div form button,footer .main button{
+	margin-top:40px;
+	width:150px;
+	height:50px;
+	border-radius:30px;
+	outline:none;
+	border:none;
+	color:white;
+	background-color:rgb(239,182,0);
+	font-weight:900;
+	cursor:pointer;
+}
+/*----------------------------------------------------*/
+footer{
+	background-color:rgb(32,29,35);
+	height:700px;
+	padding:0 150px;
+}
+footer .header{
+	display:flex;
+	align-items:center;
+}
+footer .header .logo{
+	background-color:white;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+	padding:30px;
+	padding-top:100px;
+	font-size:30px;
+	font-weight:800;
+	text-transform:uppercase;
+}
+footer .header .phone,footer .header .email,footer .header .address{
+	margin-left:100px;
+	color:white;
+	font-size:20px;
+} 
+footer .main{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+footer .main h1{
+	color:white;
+	text-align:center;
+	border-bottom:5px solid rgb(239,182,0);
+	margin:0 450px;
+	font-size:20px;
+	font-weight:800;
+	margin-bottom:40px;
+}
+footer .main input{
+	margin:0 300px;
+	height:40px;
+	outline:none;
+	border:none;
+}
+footer .main button{
+	margin:50px 450px;
+}
+footer .main .socialmedia{
+	margin:0px 420px;
+	color:white;
+	font-size:40px;
+	display:flex;
+}
+footer .main .socialmedia i{
+	margin-right:20px;
+	cursor:pointer;
+}
+footer .footer{
+	text-align:center;
+	border-top:1px solid white;
+	font-size:20px;
+	padding:20px;
+	color:gray;
+	margin:40px 300px;
+}
